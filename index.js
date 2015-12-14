@@ -239,7 +239,7 @@ PythonShell.prototype.end = function (callback) {
  * Kill the process (send SIGUP).
  */
 PythonShell.prototype.kill = function () {
-    this.childProcess.kill('SIGUP') ;
+    this.childProcess.kill('SIGHUP') ;
 };
 
 module.exports = PythonShell;
