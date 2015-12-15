@@ -236,10 +236,10 @@ PythonShell.prototype.end = function (callback) {
 };
 
 /**
- * Kill the process (send SIGUP).
+ * Kill the process (send SIGTERM signal).
  */
 PythonShell.prototype.kill = function () {
-    this.childProcess.kill('SIGHUP') ;
+    this.childProcess.kill() ;
 };
 
 module.exports = PythonShell;
